@@ -28,7 +28,12 @@ function App() {
 
   if (currencyValue == "") {
     return (
-      <h1>carregando moedas</h1>
+      <MainContainer>
+        <div className="topContainer">
+        </div>
+          <h3>Carregando valores de moedas</h3>
+      </MainContainer>
+      
     )
   } else {
     return (
