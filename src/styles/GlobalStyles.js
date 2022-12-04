@@ -13,8 +13,7 @@ export default createGlobalStyle`
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
-  h3 {
-  margin-bottom: 0.2rem;
-  
+  h3, h2, h1 {
+  font-family: 'Poppins';
 }
 `

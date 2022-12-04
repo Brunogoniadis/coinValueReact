@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import axios from 'axios';
 import { MainContainer } from './styles/App';
 import { CoinContainer } from './styles/App';
+import GlobalStyles from './styles/GlobalStyles';
+
 
 function App() {
   const [currencyValue, setcurrencyValue] = useState("")
@@ -28,9 +30,10 @@ function App() {
     )
   } else {
     return (
+
       <MainContainer>
 
-        <CoinContainer>
+        <CoinContainer>      <GlobalStyles />
           <h3>{currencyValue["USDBRL"]["code"]}</h3>
           <h3>{currencyValue["USDBRL"]["high"]}</h3>
         </CoinContainer>
