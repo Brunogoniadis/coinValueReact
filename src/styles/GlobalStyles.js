@@ -14,6 +14,7 @@ export default createGlobalStyle`
       monospace;
   }
   h3, h2, h1 {
+
   font-family: 'Poppins';
 }
 `

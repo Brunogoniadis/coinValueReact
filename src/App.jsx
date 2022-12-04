@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios';
-import { MainContainer } from './styles/App';
-import { CoinContainer } from './styles/App';
+
 import GlobalStyles from './styles/GlobalStyles';
+
+import { MainContainer } from './styles/App';
+
+
 
 
 function App() {
@@ -32,15 +35,28 @@ function App() {
     return (
 
       <MainContainer>
+        <GlobalStyles />
+      <div className="topContainer"> 
 
-        <CoinContainer>      <GlobalStyles />
-          <h3>{currencyValue["USDBRL"]["code"]}</h3>
-          <h3>{currencyValue["USDBRL"]["high"]}</h3>
-        </CoinContainer>
-        <CoinContainer>
-          <h3>{currencyValue["EURBRL"]["code"]}</h3>
-          <h3>{currencyValue["EURBRL"]["high"]}</h3>
-        </CoinContainer>
+        <h3>{currencyValue["USDBRL"]["code"]}</h3>
+        <h3>{currencyValue["EURBRL"]["code"]}</h3>
+        
+      </div>
+
+      <div className="CoinsContainer">
+      <div className="CoinsValue">     
+          
+          <h3>${currencyValue["USDBRL"]["high"]}</h3>
+      </div>
+      
+      <div className="CoinsValue">
+
+          <h3>${currencyValue["EURBRL"]["high"]}</h3>
+      </div>
+
+      </div>
+
+
 
       </MainContainer>
     )
