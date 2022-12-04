@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios';
-
 import GlobalStyles from './styles/GlobalStyles';
-
 import { MainContainer } from './styles/App';
-
+import euatag from "./assets/eua.png"
+import eurotag from "./assets/euro.png"
 
 
 
@@ -37,8 +36,9 @@ function App() {
       <MainContainer>
         <GlobalStyles />
       <div className="topContainer"> 
-
+        <img src={euatag} alt="" />
         <h3>{currencyValue["USDBRL"]["code"]}</h3>
+        <img src={eurotag} alt="" />
         <h3>{currencyValue["EURBRL"]["code"]}</h3>
         
       </div>

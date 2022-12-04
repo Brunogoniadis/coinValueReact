@@ -8,6 +8,8 @@ export const MainContainer = styled.div`
         height: 115px;
         width: 180px;
         border-radius: 10px;
+        box-shadow: 2px  2px #9C9C9C;
+
 
     .topContainer {
         display: flex;
@@ -18,6 +20,9 @@ export const MainContainer = styled.div`
         width: 100%;
         background-color: #e9e9e9;
         border-radius: 9px 9px 0px 0px;
+    img{
+        width: 25px;
+    }
 
     h3{
         margin-top: 0px;
