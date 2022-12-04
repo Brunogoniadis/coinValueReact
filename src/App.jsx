@@ -51,7 +51,7 @@ function App() {
       
       <div className="CoinsValue">
 
-          <h3>${currencyValue["EURBRL"]["high"]}</h3>
+          <h3>{currencyValue["EURBRL"]["high"]}€</h3>
       </div>
 
       </div>
