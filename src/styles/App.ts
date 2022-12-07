@@ -21,7 +21,7 @@ export const BackgroundStatic =styled.div`
     display: flex;
 `
 export const BackgroundScreen = styled.div`
-    background-image: url("../../public/background.png");
+    background-image: url("https://raw.githubusercontent.com/Brunogoniadis/coinValueReact/main/public/background.png");
     background-size: contain ;
     background-size: 280px;
 
