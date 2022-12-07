@@ -23,9 +23,6 @@ interface IValue {
 function App() {
   const [currencyValue, setcurrencyValue] = useState<IValue>();
   const [loaded, setLoaded] = useState(false);
-  const [currencyValueFixed, setCurrencyValueFixed] = useState(0)
-
-
 
   useEffect(() => {
     async function getApiCurrencyValue(){
@@ -49,11 +46,14 @@ function App() {
       {loaded ? 
         <>
           <div className="topContainer"> 
-            <img src={"/eua.png"} alt="" />
-            <h3>{currencyValue?.USDBRL.code}</h3>
-            <img src={"/euro.png"} alt="" />
-
-            <h3>{currencyValue?.EURBRL.code}</h3>
+            <div className="titleContainer">
+              <img src={"/eua.png"} alt="" />
+              <h3>{currencyValue?.USDBRL.code}</h3>
+            </div>
+            <div className="titleContainer">
+              <img src={"/euro.png"} alt="" />
+              <h3>{currencyValue?.EURBRL.code}</h3>
+            </div>
             <h3></h3>
           </div>
 

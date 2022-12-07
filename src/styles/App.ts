@@ -16,7 +16,7 @@ export const MainContainer = styled.div`
         height: 35px;
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
         width: 100%;
         background-color: #e9e9e9;
         border-radius: 9px 9px 0px 0px;
@@ -28,6 +28,12 @@ export const MainContainer = styled.div`
         margin-top: 0px;
         margin-bottom: 0px;
     }
+    }
+    .titleContainer{
+        display: flex;
+        margin-right: 10px;
+        margin-left: 10px;
+        gap: 5px;
     }
 
     .CoinsContainer {
