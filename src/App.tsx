@@ -2,7 +2,11 @@ import { useState, useEffect } from 'react'
 import axios from 'axios';
 import GlobalStyles from './styles/GlobalStyles';
 import { MainContainer } from './styles/App';
+import { BackgroundScreen } from './styles/App';
+import { BackgroundStatic } from './styles/App';
 
+
+BackgroundStatic
 interface IValue {
     EURBRL:{
       ask:string
@@ -41,6 +45,8 @@ function App() {
   }, [])
 
   return (
+    <BackgroundStatic>
+
     <MainContainer>
       <GlobalStyles />
       {loaded ? 
@@ -61,15 +67,17 @@ function App() {
 
             <div className="CoinsValue">
                 
-                <h3>${currencyValue?.USDBRL.high.slice(-6,4)}</h3>
+                <h3>${currencyValue?.USDBRL.ask.slice(-6,4)}</h3>
             </div>
 
             <div className="CoinsValue">
 
-                <h3>{currencyValue?.EURBRL.high.slice(-6,4)}€</h3>
+                <h3>{currencyValue?.EURBRL.ask.slice(-6,4)}€</h3>
             </div>
-
+              
           </div>
+          <a className='FooterDescription' href="https://github.com/Brunogoniadis/"target="_blank" rel="noopener noreferrer">Criado por Bruno Goniadis</a>
+
       </>
     :
       <>
@@ -79,6 +87,9 @@ function App() {
       </>
     }
     </MainContainer>
+     <BackgroundScreen></BackgroundScreen>
+
+    </BackgroundStatic>
   ) 
 }
 
